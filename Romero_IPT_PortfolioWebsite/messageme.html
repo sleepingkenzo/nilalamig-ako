@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Kyle Romero</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="Styles css/messageme_styles.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="main-nav">
+        <ul class="nav-links">
+            <li><a href="index.html#home">HOME</a></li>
+            <li><a href="index.html#projects">PROJECTS</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="#" class="active">CONTACT</a></li>
+        </ul>
+        <button class="btn" id="interested_btn">Interested?</button>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="page-wrapper">
+        <div class="contact-card">
+            <div class="card-inner">
+
+                <!-- FORM -->
+                <div class="form-side">
+                    <p class="form-eyebrow">Let's talk</p>
+                    <h2 class="form-title">Get In<br>Touch</h2>
+
+                    <form action="https://formspree.io/f/xqedyrly" id="contactForm" method="POST">
+                        <div class="form-row">
+                            <div class="field" id="field-name">
+                                <input name="name" type="text" id="user_name_id" placeholder="Your Name" autocomplete="name" />
+                                <div class="field-msg" id="msg-name"></div>
+                            </div>
+                            <div class="field" id="field-email">
+                                <input name="email" type="email" id="user_email_id" placeholder="Your Email" autocomplete="email" />
+                                <div class="field-msg" id="msg-email"></div>
+                            </div>
+                        </div>
+
+                        <div class="field" id="field-subject">
+                            <input name="subject" type="text" id="user_subject_id" placeholder="Subject" />
+                            <div class="field-msg" id="msg-subject"></div>
+                        </div>
+
+                        <div class="field" id="field-message">
+                            <textarea name="message" id="user_message_id" placeholder="Your Message" rows="6"></textarea>
+                            <div class="field-msg" id="msg-message"></div>
+                        </div>
+
+                        <button type="submit" id="submit_btn_id" class="btn-submit">
+                            <span id="btn-label">Send Message</span>
+                        </button>
+
+                        <div class="toast-msg" id="formToast"></div>
+                    </form>
+                </div>
+
+                <!-- INFO -->
+                <div class="info-side">
+                    <p class="info-label">Contact Info</p>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-text">
+                            <h5>Location</h5>
+                            <p>Daet, Philippines</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <div class="info-text">
+                            <h5>Phone</h5>
+                            <p>+63 966 179 0870</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h5>Email</h5>
+                            <p>romerokylejacob@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="social-row">
+                        <a href="https://facebook.com/kenzo.loves.sleeping" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com/@Justcallmekenzo" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kyle Romero. All rights reserved.</p>
+    </footer>
+
+    <script src="JS scripts/MM_validation.js"></script>
+
+</body>
+
+</html>

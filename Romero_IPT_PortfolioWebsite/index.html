@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Romero | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles css/styles.css">
+</head>
+
+<body>
+
+    <header class="hero-section" id="home">
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#testimonials">TESTIMONIALS</a></li>
+                <li><a class="bg-primary text-white p-1 w-100 rounded d-block" href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-text-container">
+            <h1 class="hero-title title-top">
+                I am NOT<br>a<span class="color-dark-blue"> Designer</span>
+            </h1>
+            <div class="title-underline"></div>
+            <h1 class="hero-title title-name color-dark-blue"
+                style="background:#b06ab3;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:transparent;">
+                Kyle Romero
+            </h1>
+            <div class="d-flex justify-content-left gap-4 social-icons">
+                <a href="https://github.com/sleepingkenzo" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/kyle-romero-ab80593b3/"><i class="bi bi-linkedin"></i></a>
+                <a href="https://facebook.com/kenzo.loves.sleeping" target="_blank"><i class="bi bi-facebook"></i></a>
+                <p>BSIT 2A</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- skills -->
+    <section class="skills-section" id="skills">
+        <div class="section-header">
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-grid">
+
+            <div class="skill-category">
+                <span class="skill-cat-label">Languages</span>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Java</span><span>85%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>JavaScript</span><span>30%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="30"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Python</span><span>10%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="10"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>C++</span><span>7%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="7"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <span class="skill-cat-label">Web Technologies</span>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-name"><span>HTML</span><span>74%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="74"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>CSS</span><span>50%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <span class="skill-cat-label">Databases</span>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Text-based </span><span>75%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>MySQL</span><span>30%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="30"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <span class="skill-cat-label">Tools & Frameworks</span>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-name"><span>VS Code</span><span>92%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Android Studio</span><span>45%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="45"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Blender</span><span>43%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="43"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Bootstrap</span><span>30%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="30"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- for github -->
+    <section class="github-section" id="github">
+        <div class="section-header">
+            <h2>GitHub Repos</h2>
+        </div>
+        <div id="github-repos-container" class="github-repos-grid">
+            <p class="github-loading"><i class="bi bi-arrow-repeat"></i> &nbsp;Fetching repositories…</p>
+        </div>
+    </section>
+
+    <!-- myprojects -->
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <h2>My Projects</h2>
+        </div>
+        <div class="projects-container">
+
+            <article class="project-card" onclick="openModal('images/serbisyongbarangay.png')" tabindex="0">
+                <div class="card-image">
+                    <img src="images/serbisyongbarangay.png" alt="Barangay System Interface">
+                    <div class="overlay"><span class="view-btn">View Details</span></div>
+                </div>
+                <div class="card-content">
+                    <span class="tag">System</span>
+                    <h3>Serbisyong Barangay</h3>
+                    <p>A barangay management system.</p>
+                    <div class="container d-flex justify-content-center gap-4">
+                        <div class="tech-stack">
+                            <span class="tech-badge">Java</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">JavaFx</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" onclick="openModal('images/dentalclinic.png')" tabindex="0">
+                <div class="card-image">
+                    <img src="images/dentalclinic.png" alt="Dental Clinic UI">
+                    <div class="overlay"><span class="view-btn">View Details</span></div>
+                </div>
+                <div class="card-content">
+                    <span class="tag">System</span>
+                    <h3>Dental Clinic</h3>
+                    <p>A hospital management system.</p>
+                    <div class="container d-flex justify-content-center gap-4">
+                        <div class="tech-stack">
+
+                            <span class="tech-badge">Java</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" onclick="openModal('images/emergencyescape.png')" tabindex="0">
+                <div class="card-image">
+                    <img src="images/emergencyescape.png" alt="Emergency Dashboard">
+                    <div class="overlay"><span class="view-btn">View Details</span></div>
+                </div>
+                <div class="card-content">
+                    <span class="tag">DSA</span>
+                    <h3>Emergency Escape</h3>
+                    <p>A console-based game made in Java.</p>
+                    <div class="container d-flex justify-content-center gap-4">
+                        <div class="tech-stack">
+                            <span class="tech-badge">Java</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" onclick="openModal('images/monkeymonkey.png')" tabindex="0">
+                <div class="card-image">
+                    <img src="images/monkeymonkey.png" alt="Monkey App">
+                    <div class="overlay"><span class="view-btn">View Details</span></div>
+                </div>
+                <div class="card-content">
+                    <span class="tag">DSA</span>
+                    <h3>Monkey-Monkey</h3>
+                    <p>A console-based monkey-monkey game made in Java.</p>
+
+                    <div class="container d-flex justify-content-center gap-4">
+                        <div class="tech-stack">
+                            <span class="tech-badge">Java</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" onclick="openModal('images/portfolio.png')" tabindex="0">
+                <div class="card-image">
+                    <img src="images/portfolio.png" alt="Portfolio">
+                    <div class="overlay"><span class="view-btn">View Details</span></div>
+                </div>
+                <div class="card-content">
+                    <span class="tag">Website</span>
+                    <h3>Website Portfolio</h3>
+                    <p>A portfolio made using HTML, CSS, and JavaScript.</p>
+                    <div class="container d-flex justify-content-center gap-4">
+                        <div class="tech-stack">
+                            <span class="tech-badge">HTML</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">CSS</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" onclick="openModal('images/website.png')" tabindex="0">
+                <div class="card-image">
+                    <img src="images/website.png" alt="Portfolio V1">
+                    <div class="overlay"><span class="view-btn">View Details</span></div>
+                </div>
+                <div class="card-content">
+                    <span class="tag">Website</span>
+                    <h3>OceanShore Beach Resort Website</h3>
+                    <p>An e-commerce website made in HTML, CSS, and JavaScript.</p>
+                    <div class="container d-flex justify-content-center gap-4">
+                        <div class="tech-stack">
+                            <span class="tech-badge">HTML</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">CSS</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- IMAGE MODAL -->
+    <div class="project-modal" id="projectModal" onclick="closeModal()">
+        <img id="modalImage" src="" alt="Project Preview">
+    </div>
+
+    <!-- about -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-image-wrapper" onclick="openModal('images/mail.google.png')">
+                <div class="img-frame">
+                    <img src="images/mail.google.jpg" alt="Kenzo pic">
+                    <div class="img-overlay"><span>🔍</span></div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h4 class="sub-heading">Who I Am</h4>
+                <h2>About Me</h2>
+                <div class="bio-text">
+                    <p>Hi! I am <strong>Kyle Romero</strong>. While I appreciate beautiful interfaces, my passion is the
+                        <strong>Backend</strong>, which is building reliable, efficient, and scalable architectures that
+                        make
+                        applications work.
+                    </p>
+                </div>
+                <a href="https://www.linkedin.com/in/kyle-romero-ab80593b3/" target="_blank">
+                    <div class="tech-stack">
+                        <span class="tech-badge" id="linkedin_about">LinkedIn
+                            <i class="bi bi-linkedin"></i>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- leaftlet -->
+    <section class="map-section" id="location">
+        <div id="map"></div>
+        <div class="map-overlay-badge">
+            <p>Based in</p>
+            <h3>Daet, Camarines Norte</h3>
+            <span>Philippines 🇵🇭</span>
+        </div>
+    </section>
+
+
+    <!-- testimontnals -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-header">
+            <h2>Testimonials</h2>
+        </div>
+        <div class="testimonial-form-wrap">
+
+
+            <div>
+                <p
+                    style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.2em;color:#b06ab3;text-transform:uppercase;margin-bottom:20px;">
+                    What people say</p>
+                <div class="testimonial-list" id="testimonial-list">
+                    <p class="testimonial-empty">No testimonials yet. Be the first!</p>
+                </div>
+            </div>
+
+
+            <div>
+                <h3 class="t-form-title">Leave a<br>Testimonial</h3>
+                <p class="t-form-sub">Worked with me? I'd love to hear from you.</p>
+
+                <form id="testimonialForm" novalidate>
+                    <div class="t-field" id="tf-name">
+                        <input type="text" id="t_name" placeholder="Your Name" />
+                        <div class="t-field-msg" id="tmsg-name">Name is required.</div>
+                    </div>
+
+                    <div class="t-field" id="tf-role">
+                        <input type="text" id="t_role" placeholder="Your Role / Company (optional)" />
+                    </div>
+
+                    <div class="t-field" id="tf-msg">
+                        <textarea id="t_message" placeholder="Your testimonial…" rows="4"></textarea>
+                        <div class="t-field-msg" id="tmsg-msg">Message must be at least 15 characters.</div>
+                    </div>
+
+
+                    <div class="star-rating-input" id="tf-stars">
+                        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3" checked><label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                    </div>
+
+                    <button type="submit" class="btn-t-submit" id="t-submit-btn">Submit Testimonial</button>
+                    <div class="t-toast" id="t-toast"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact -->
+    <section class="contact-section" id="contact">
+        <h2>What do you think?</h2>
+        <p>Are you interested in working with me? Don't hesitate to send me a DM!</p>
+        <div class="interestedclass">
+            <a href="messageme.html" class="btn-contact">Message me!</a>
+        </div>
+        <div class="d-flex justify-content-left gap-4 social-icons">
+            <a href="https://github.com/sleepingkenzo" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/kyle-romero-ab80593b3/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://facebook.com/kenzo.loves.sleeping" target="_blank"><i class="bi bi-facebook"></i></a>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kyle Romero. All rights reserved.</p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+    <script src="JS scripts/mainscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="JS scripts/testimonials.js"></script>
+</body>
+
+</html>
